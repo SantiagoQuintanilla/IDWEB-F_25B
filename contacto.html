@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Mi Página Personal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="nombre">Santiago Alonso Quintanilla Chávez</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contacto.html" class="activo">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Mis Redes:</h2>
+      <p>Puedes seguirme en:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/r3v_eriee/?__pwa=1">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/santiago-quintanilla-3aa73620a/">LinkedIn</a></li>
+        <li><a href="https://github.com/SantiagoQuintanilla">GitHub</a></li>
+      </ul>
+    </section>
+    <hr>
+    <section>
+    <h2>Correo electronico: </h2>
+    <p>Puedes escribirme a: 
+      <a href="squintanilla@unsa.edu.pe">squintanilla@unsa.edu.pe</a>
+    </p>
+    <hr>
+    <h3>O envíame un mensaje directo:</h3>
+
+    <form class="formulario-contacto" action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="Ejemplo: nombre@correo.com" required>
+
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+    </section>
+    <br><br><br>
+  </main>
+
+  <footer>
+    <p>© 2025 Santiago Alonso Quintanilla Chávez | Introducción al Desarrollo Web </p>
+  </footer>
+
+</body>
+</html>
