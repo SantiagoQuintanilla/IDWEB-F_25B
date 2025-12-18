@@ -1,0 +1,295 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+
+header {
+  background-color: #0e2b6f;
+  color: white;
+  text-align: center;
+  padding: 1px;
+}
+
+#titulo {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  text-shadow: 20px 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+#encabezado {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: #0d265f;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.activo {
+  color: #4a90e2;
+}
+
+nav a.activo {
+  border-bottom: 2px solid #4a90e2;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.imagen {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 50, 0.8);
+}
+
+.foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 10px;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.bloque.invertido {
+  flex-direction: row-reverse;
+}
+
+.bloque .texto {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.bloque .imagen {
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#inicio {
+  background-color: rgb(207, 223, 255);
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 3px rgba(74,144,226,0.3);
+}
+
+.formulario-contacto button {
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #357ab8;
+}
+
+.lista-albums,
+.lista-artistas,
+.lista-generos,
+.albums {
+  display: grid;
+  gap: 20px;
+}
+
+.lista-albums,
+.lista-generos,
+.albums {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.lista-artistas {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 24px;
+}
+
+.card-album,
+.card-artista,
+.card-genero {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(5, 15, 50, 0.25);
+}
+
+.card-genero {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-album h3,
+.card-artista h3,
+.card-genero h3 {
+  margin-top: 0;
+  color: #1a237e;
+}
+
+.album-info-card {
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.album-info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.album-info-card li {
+  margin-bottom: 2px;
+}
+
+.genero-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.genero-info-card,
+.genero-albums {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.genero-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genero-info-card li,
+.genero-albums li {
+  font-size: 14px;
+}
+
+.genero-historia,
+.genero-relevancia {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.filtro-albums {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(5, 15, 50, 0.15);
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.filtro-albums label {
+  font-weight: bold;
+  color: #0d265f;
+  font-size: 16px;
+}
+
+.filtro-albums select {
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filtro-albums select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.35);
+}

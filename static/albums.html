@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albumes | WikiMusic</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1 id="titulo">WikiMusic</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/static/index.html">Inicio</a></li>
+      <li><a href="/static/artistas.html">Artistas</a></li>
+      <li><a href="/static/albums.html" class="activo">Albums</a></li>
+      <li><a href="/static/generos.html">Géneros</a></li>
+      <li><a href="/static/contacto.html" >Contacto</a></li>
+    </ul>
+  </nav>
+
+ <main>
+    <section class="filtro-albums">
+      <label for="filtro-genero">Filtrar por género:</label>
+      <select id="filtro-genero">
+        <option value="todos">Todos</option>
+        <option value="shoegaze">Shoegaze</option>
+        <option value="dream_pop">Dream Pop</option>
+        <option value="indie">Indie</option>
+        <option value="rock_alternativo">Rock Alternativo</option>
+        <option value="folk">Folk</option>
+      </select>
+    </section>
+        <h2>Álbumes</h2>
+        <p>
+            En esta sección se presentan álbumes destacados que han tenido
+            relevancia dentro de distintos géneros y etapas de la música moderna.
+        </p>
+    </section>
+    <section class="lista-albums">
+        <article class="card-album" data-genero="shoegaze">
+          <img src="/static/imagenes/Loveless.png" alt="Loveless" class="imagen">
+          <div class="album-contenido">
+            <h3>Loveless</h3>
+            <div class="album-info">
+              <span><strong>Artista:</strong> My Bloody Valentine</span>
+              <span><strong>Año:</strong> 1991</span>
+              <span><strong>Género:</strong> Shoegaze</span>
+            </div>
+            <div class="album-info-card">
+                <h4>Información del álbum</h4>
+                <ul>
+                    <li><strong>Artista:</strong> My Bloody Valentine</li>
+                    <li><strong>Año de publicación:</strong> 1991</li>
+                    <li><strong>Género:</strong> Shoegaze</li>
+                </ul>
+            </div>
+            <p class="album-descripcion">
+                Loveless es un álbum influyente dentro del shoegaze, reconocido por
+                su sonido denso, sus capas de guitarras y su innovador uso de la
+                distorsión y los efectos.
+            </p>
+            <div class="album-canciones">
+              <h4>Lista de canciones</h4>
+              <ol>
+                <li>Only Shallow</li>
+                <li>Loomer</li>
+                <li>Touched</li>
+                <li>To Here Knows When</li>
+                <li>When You Sleep</li>
+                <li>I Only Said</li>
+                <li>Come in Alone</li>
+                <li>Sometimes</li>
+                <li>Blown a Wish</li>
+                <li>What You Want</li>
+                <li>Soon</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-album" data-genero="rock_alternativo">
+            <img src="/static/imagenes/OK Computer.jpg" alt="OK Computer" class="imagen">
+
+            <div class="album-contenido">
+                <h3>OK Computer</h3>
+                <div class="album-info-card">
+                    <h4>Información del álbum</h4>
+                    <ul>
+                        <li><strong>Artista:</strong> Radiohead</li>
+                        <li><strong>Año de publicación:</strong> 1997</li>
+                        <li><strong>Género:</strong> Rock Alternativo</li>
+                    </ul>
+                </div>
+                <p class="album-descripcion">
+                    OK Computer es un álbum fundamental del rock alternativo, destacado
+                    por su enfoque conceptual y su crítica a la alienación y la
+                    modernidad tecnológica.
+                </p>
+
+                <div class="album-canciones">
+                    <h4>Lista de canciones</h4>
+                    <ol>
+                        <li>Airbag</li>
+                        <li>Paranoid Android</li>
+                        <li>Subterranean Homesick Alien</li>
+                        <li>Exit Music (For a Film)</li>
+                        <li>Let Down</li>
+                        <li>Karma Police</li>
+                        <li>Fitter Happier</li>
+                        <li>Electioneering</li>
+                        <li>Climbing Up the Walls</li>
+                        <li>No Surprises</li>
+                        <li>Lucky</li>
+                        <li>The Tourist</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+        <article class="card-album" data-genero="dream_pop shoegaze">
+            <img src="/static/imagenes/Souvlaki.png" alt="Portada del álbum Souvlaki" class="imagen">
+
+            <div class="album-contenido">
+                <h3>Souvlaki</h3>
+                <div class="album-info-card">
+                    <h4>Información del álbum</h4>
+                    <ul>
+                        <li><strong>Artista:</strong> Slowdive</li>
+                        <li><strong>Año de publicación:</strong> 1993</li>
+                        <li><strong>Género:</strong> Dream pop / Shoegaze</li>
+                    </ul>
+                </div>
+                <p class="album-descripcion">
+                    Souvlaki es uno de los álbumes más representativos del dream pop y
+                    shoegaze, reconocido por sus atmósferas etéreas, melancólicas y su
+                    cuidada producción sonora.
+                </p>
+
+                <div class="album-canciones">
+                    <h4>Lista de canciones</h4>
+                    <ol>
+                        <li>Alison</li>
+                        <li>Machine Gun</li>
+                        <li>40 Days</li>
+                        <li>Sing</li>
+                        <li>Here She Comes</li>
+                        <li>Souvlaki Space Station</li>
+                        <li>When the Sun Hits</li>
+                        <li>Altogether</li>
+                        <li>Melon Yellow</li>
+                        <li>Dagger</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+        <article class="card-album" data-genero="dream_pop">
+          <img src="/static/imagenes/Heaven or las Vegas.png" alt="Heaven or Las Vegas" class="imagen">
+          <div class="album-contenido">
+            <h3>Heaven or Las Vegas</h3>
+            <div class="album-info-card">
+              <h4>Información del álbum</h4>
+                <ul>
+                  <li><strong>Artista:</strong> Cocteau Twins</li>
+                  <li><strong>Año de publicación:</strong> 1990</li>
+                  <li><strong>Género:</strong> Dream pop</li>
+                </ul>
+            </div>
+            <p class="album-descripcion">
+              Heaven or Las Vegas es uno de los discos más influyentes del dream pop,
+              caracterizado por sus atmósferas etéreas, melodías envolventes y la
+              distintiva voz de Elizabeth Fraser.
+            </p>
+
+            <div class="album-canciones">
+              <h4>Lista de canciones</h4>
+              <ol>
+                <li>Cherry-coloured Funk</li>
+                <li>Pitch the Baby</li>
+                <li>Iceblink Luck</li>
+                <li>Fifty-Fifty Clown</li>
+                <li>Heaven or Las Vegas</li>
+                <li>I Wear Your Ring</li>
+                <li>Fotzepolitic</li>
+                <li>Wolf in the Breast</li>
+                <li>Road, River and Rail</li>
+                <li>Frou-Frou Foxes in Midsummer Fires</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="card-album" data-genero="indie">
+          <img src="/static/imagenes/Yankee Hotel Foxtrot.png" alt="Yankee Hotel Foxtrot" class="imagen">
+          <div class="album-contenido">
+            <h3>Yankee Hotel Foxtrot</h3>
+
+            <div class="album-info">
+              <span><strong>Artista:</strong> Wilco</span>
+              <span><strong>Año:</strong> 2002</span>
+              <span><strong>Género:</strong> Indie rock / Art rock</span>
+            </div>
+
+            <div class="album-info-card">
+              <h4>Información del álbum</h4>
+              <ul>
+                <li><strong>Artista:</strong> Wilco</li>
+                <li><strong>Año de publicación:</strong> 2002</li>
+                <li><strong>Género:</strong> Indie rock / Art rock</li>
+              </ul>
+            </div>
+
+            <p class="album-descripcion">
+              Yankee Hotel Foxtrot es un álbum clave del rock alternativo de los años 2000,
+              reconocido por su experimentación sonora, letras introspectivas y una
+              producción que combina elementos orgánicos y electrónicos.
+            </p>
+
+            <div class="album-canciones">
+              <h4>Lista de canciones</h4>
+              <ol>
+                <li>I Am Trying to Break Your Heart</li>
+                <li>Kamera</li>
+                <li>Radio Cure</li>
+                <li>War on War</li>
+                <li>Jesus, Etc.</li>
+                <li>Ashes of American Flags</li>
+                <li>Heavy Metal Drummer</li>
+                <li>I'm the Man Who Loves You</li>
+                <li>Pot Kettle Black</li>
+                <li>Poor Places</li>
+                <li>Reservations</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+          <article class="card-album" data-genero="indie folk">
+          <img src="/static/imagenes/The Glow Pt_2.jpg" alt="The Glow, Pt. 2" class="imagen">
+          <div class="album-contenido">
+            <h3>The Glow, Pt. 2</h3>
+
+            <div class="album-info">
+              <span><strong>Artista:</strong> The Microphones</span>
+              <span><strong>Año:</strong> 2001</span>
+              <span><strong>Género:</strong> Indie folk / Lo-fi</span>
+            </div>
+
+            <div class="album-info-card">
+              <h4>Información del álbum</h4>
+              <ul>
+                <li><strong>Artista:</strong> The Microphones</li>
+                <li><strong>Año de publicación:</strong> 2001</li>
+                <li><strong>Género:</strong> Indie folk / Lo-fi</li>
+              </ul>
+            </div>
+
+            <p class="album-descripcion">
+              The Glow, Pt. 2 es un álbum emblemático del indie lo-fi, reconocido por su
+              enfoque íntimo y emocional, así como por su producción cruda y
+              experimental liderada por Phil Elverum.
+            </p>
+
+            <div class="album-canciones">
+              <h4>Lista de canciones</h4>
+              <ol>
+                <li>I Want Wind to Blow</li>
+                <li>The Glow, Pt. 2</li>
+                <li>The Moon</li>
+                <li>Headless Horseman</li>
+                <li>My Roots Are Strong and Deep</li>
+                <li>Instrumental</li>
+                <li>The Mansion</li>
+                <li>I'll Not Contain You</li>
+                <li>The Gleam, Pt. 2</li>
+                <li>Map</li>
+                <li>You'll Be in the Air</li>
+                <li>I Want to Be Cold</li>
+                <li>I Am Bored</li>
+                <li>I Felt Your Shape</li>
+                <li>Samurai Sword</li>
+                <li>My Warm Blood</li>
+                <li>The Moon Sequel</li>
+                <li>You'll Be in the Air (Reprise)</li>
+                <li>I Felt My Size</li>
+                <li>Instrumental 2</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Web Personal: "WikiMusic"</p>
+    <p>© 2025 Santiago Alonso Quintanilla Chávez | Introducción al Desarrollo Web </p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

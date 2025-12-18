@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | WikiMusic</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1 id="titulo">WikiMusic</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/static/index.html">Inicio</a></li>
+      <li><a href="/static/artistas.html">Artistas</a></li>
+      <li><a href="/static/albums.html">Albums</a></li>
+      <li><a href="/static/generos.html">Géneros</a></li>
+      <li><a href="/static/contacto.html" class="activo">Contacto</a></li>
+    </ul>
+  </nav>
+
+<main>
+    <section>
+        <h2>Contacto y participación</h2>
+        <p>
+            WikiMusic es un proyecto en constante crecimiento. A través de esta
+            sección puedes colaborar sugiriendo contenido que consideres
+            relevante para la página.
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h3>Correo de contacto</h3>
+        <p>
+            Si deseas comunicarte directamente con el equipo del proyecto,
+            puedes escribir al siguiente correo electrónico:
+            <a href="mailto:squintanilla@unsa.edu.pe">squintanilla@unsa.edu.pe</a>
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h3>Sugerir contenido para WikiMusic</h3>
+        <p>
+            Utiliza el siguiente formulario para recomendar artistas, álbumes,
+            géneros musicales o cualquier otro contenido que consideres
+            relevante para ser incorporado en la página.
+        </p>
+        <form class="formulario-contacto" action="/sugerencias" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+
+            <label for="asunto">Tipo de sugerencia:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Artista, álbum, género, etc." required>
+
+            <label for="mensaje">Descripción de la sugerencia:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe la información que deseas sugerir..." required></textarea>
+
+            <button type="submit">Enviar sugerencia</button>
+        </form>
+    </section>
+</main>
+
+  <footer>
+    <p>Proyecto Web Personal: "WikiMusic"</p>
+    <p>© 2025 Santiago Alonso Quintanilla Chávez | Introducción al Desarrollo Web </p>
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
